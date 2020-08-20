@@ -4,6 +4,7 @@
   "description": "Teste de PWA A2HS button Betão Ve se funciona ai",
   "main": "botao.js",
   "scripts": {
+    "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
