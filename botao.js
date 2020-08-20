@@ -1,5 +1,15 @@
-// Code to handle install prompt on desktop
+// Register service worker to control making site work offline
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('../service-worker.js')
+        .then(function () {
+            console.log("Service Worker registered successfully");
+        })
+        .catch(function () {
+            console.log("Service worker registration failed")
+        });
+}
 
+// Code to handle install prompt on desktop
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
 addBtn.style.display = 'none';
