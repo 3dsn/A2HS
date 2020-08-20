@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="manifest" href="manifest.json"> -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png">
+  <!-- <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png"> -->
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#2196f3" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de PWA</title>
+</head>
+
+<body>
+  <noscript>
+    <h2> Se JavaScript is disabled! Mostra essa mensagem </h2>
+  </noscript>
+  <h1> Nosso teste de PWA</h1>
+  <div class="center">
+    <button class="add-button">Adicione na sua tela</button>
+  </div>
+  <script type="text/javascript" src="./botao.js"></script>
+  <script>
+    // Register service worker to control making site work offline
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../service-worker.js')
+        .then(function () {
+          console.log("Service Worker registered successfully");
+        })
+        .catch(function () {
+          console.log("Service worker registration failed")
+        });
+    }
+  </script>
+</body>
+
+</html>
