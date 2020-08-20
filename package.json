@@ -1,7 +1,11 @@
 {
   "name": "rawpwa",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Teste de PWA A2HS button, Betão Ve se funciona ai",
+=======
+  "description": "Teste de PWA A2HS button Betão Ve se funciona ai",
+>>>>>>> 8514918f2f276866fea4e083582ecda96889d786
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
